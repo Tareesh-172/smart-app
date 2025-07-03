@@ -1,74 +1,273 @@
-.header{
-    height:70vh;
-    background-image: url('home-bg2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* Main Header Background */
+.header {
+  height: 70vh;
+  background-image: url('home-bg2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
 }
-.header-contents{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+
+/* Left-side text content */
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50%;
+  padding: 20px;
+  bottom: 23%;
+  left: 13vw;
+  animation: fadeIn 1.5s linear;
+}
+
+.header-contents span {
+  background-color: #614A28;
+  color: #E4A93E;
+  padding: 7px;
+  font-size: 13px;
+  height: 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-contents h1 {
+  font-weight: 500;
+  font-size: 35px;
+  color: #fff;
+}
+
+.header-contents p {
+  color: #fff;
+  font-size: 1vw;
+}
+
+.header-contents button {
+  border: none;
+  color: #808080;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.header-contents button:hover {
+  color: #ff6347;
+}
+
+/* All images section */
+.header-images {
+  position: relative;
+  transform: scale(0.6);
+  left: 370px;
+}
+.food4{
+  display: none;
+}
+
+/* Floating food animation */
+.food1 {
+  position: relative;
+  top: -100px;
+  animation: foodFloat 3s linear infinite;
+}
+
+/* Wrapper for mobile and bike */
+.mobile-bike-wrap {
+  position: relative;
+  width: fit-content;
+  margin-top: 120px;  /* adjust to move mobile lower */
+  margin-left: 550px; /* move to right */
+}
+
+/* Mobile image */
+.mobile {
+  width: 720px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Bike image on top of mobile */
+.biker {
+  position: absolute;
+  bottom: 60px;   /* sit on mobile */
+  right: -40px;    /* shift left/right */
+  width: 390px;
+  z-index: 2;
+  animation: bikeMove 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes foodFloat {
+  0%   { top: -100px; }
+  50%  { top: -50px; }
+  100% { top: -100px; }
+}
+
+@keyframes bikeMove {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(15px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/* ≤1280px */
+@media (max-width: 1280px) {
+  .header {
+    background-size: cover;
+  }
+  .header-contents {
     max-width: 50%;
-    padding: 20px;
-    bottom:23%;
-    left: 13vw;
-    animation: fadeIn 1.5s linear;
-    
-}
-.header-contents span{
-    background-color: #614A28;
-    color: #E4A93E;
-    padding: 7px;
-    font-size: 13px;
-    height:20px;
-    border-radius: 25px;
+    left: 8vw;
+  }
+  .mobile-bike-wrap {
+    position: relative;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    margin-right: 60px;
+  }
+  .mobile {
+    width: 500px;
+  }
+  .biker {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+  }
+}
+
+   /* ≤1024px */
+@media (max-width: 1024px) {
+  .header {
+    height: 60vh;
+  }
+  .header-contents h1 {
+    font-size: 28px;
+  }
+  .header-contents p {
+    font-size: 14px;
+  }
+  .header-contents button {
+    padding: 12px 24px;
+  }
+  .mobile {
+    width: 420px;
+  }
+  .biker {
+    width: 250px;
+    bottom: 30px;
+  }
+}
+
+/* ≤800px */
+@media (max-width: 800px) {
+  .header {
+    height: 55vh;
+    flex-direction: column;
+    background-position: center top;
+  }
+  .header-contents {
+    max-width: 80%;
+    left: 5vw;
+    bottom: 15%;
+  }
+  .header-contents h1 {
+    font-size: 24px;
+  }
+  .header-contents p {
+    font-size: 13px;
+  }
+  .header-contents button {
+    padding: 10px 20px;
+  }
+  .mobile-bike-wrap {
     justify-content: center;
+    margin-top: 30px;
+  }
+  .mobile {
+    width: 340px;
+  }
+  .biker {
+    width: 200px;
+    right: 10px;
+    bottom: 20px;
+  }
 }
-.header-contents h1{
-    font-weight: 500;
+
+/* ≤500px */
+@media (max-width: 500px) {
+  .header {
+    height: 50vh;
+    background-position: top center;
+  }
+  .header-contents {
+    max-width: 90%;
+    left: 5vw;
+    bottom: 10%;
+    padding: 10px;
+  }
+  .header-contents span{
+    padding: 20px;
+    font-size: 20px;
+    height: 25px;
+    border-radius: 45px;
+
+   }
+  .header-contents h1 {
     font-size: 35px;
-    color: #fff;
-}
-.header-contents p{
-    color: #fff;
-    font-size: 1vw;
-}
-.header-contents button{
-    border: none;
-    color: #808080;
-    font-weight: 500;
-    padding: 1vw 2.3vw;
-    background-color: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 20px;
-}
-.header-contents button:hover{
-    color: #ff6347;
-}
-.header-images{
+    font-weight: 600;
+    color: #e6a2cd;
+    margin-top: 35px;
+
+  }
+  .header-contents p {
+    font-size: 16px;
+    color: #e0b7d1;
+    font-weight: 480;
+    margin-top: 10px;
+  }
+  .header-contents button {
+    padding: 12px 25px;
+    font-size: 12px;
+
+  }
+  .mobile-bike-wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .mobile {
+    width: 250px;
+  }
+  .biker {
+    width: 150px;
     position: relative;
-    transform: scale(0.6);
-    left: 370px;
-}
-.header-images .food1{
+    right: 0;
+    bottom: 0;
+    margin-top: 10px;
+  }
+  .header-images{
+    display: none;
+  }
+  .food4{
+    display: flex;
+    padding-left: 160px;
     position: relative;
-    top: -100px;
-    animation: food 3s linear infinite;
+    width: 290px;
+    height: auto;
+  }
+  
 }
-@keyframes food {
-    0%{
-        top: -100px;
-    }
-    50%{
-        top:-50px;
-    }
-    100%{
-        top: -100px;
-    }
-}
+

@@ -23,15 +23,14 @@ const Footer = () => {
                         <li>Delivery</li>
                         <li>Help</li>
                         <li>Privacy Policy</li>
-                    </ul>
+                    </ul> 
             </div>
         <div className="footer-content-right">
             <h2>Git in Touch</h2>
+            <Link to='/'>https://github.com/Tareesh-172</Link>
                  <ul>
                     <li> +91 7569906172</li>
-                    <li> tareeshpasarla172@gmail.com</li>
-                    <Link to='/'><li>@ tareesh_172</li></Link>
-                    
+                    <li> tareeshpasarla172@gmail.com</li> <br/>  
                 </ul>
             <div className="app-downlode-platforms">
                 <img src={assets.play_store} alt="playstore-app"/>

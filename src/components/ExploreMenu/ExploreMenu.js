@@ -19,7 +19,7 @@ const ExploreMenu =({category,setCategory})=>{
             </div>
         
     </div>
-    )
+    ) 
 }
 
 export default ExploreMenu;

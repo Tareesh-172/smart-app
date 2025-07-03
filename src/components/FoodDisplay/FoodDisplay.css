@@ -12,3 +12,54 @@
     gap:30px;
     row-gap: 50px;
 }
+
+
+/*  (1280px and below) */
+@media (max-width: 1280px) {
+    .food-display h2 {
+        font-size: 22px;
+    }
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
+    }
+}
+
+/*  (1024px and below) */
+@media (max-width: 1024px) {
+    .food-display h2 {
+        font-size: 20px;
+    }
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 20px;
+    }
+}
+
+/*  (800px and below) */
+@media (max-width: 800px) {
+    .food-display h2 {
+        font-size: 18px;
+    }
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+/*  (500px and below) */
+@media (max-width: 500px) {
+    .food-display {
+        margin-top: 20px;
+    }
+    .food-display h2 {
+        font-size: 16px;
+    }
+    .food-display-list {
+        grid-template-columns: 1fr 1fr ;
+        margin: 15px;
+        gap: 15px;
+        row-gap: 25px;
+    }
+}

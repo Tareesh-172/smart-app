@@ -30,3 +30,63 @@
 hr{
     margin-top: 20px;
 }
+
+
+/* (1280px and below) */
+@media (max-width: 1280px) {
+  .specifications .child div {
+    width: 280px;
+  }
+}
+
+/* (1024px and below) */
+@media (max-width: 1024px) {
+  .specifications {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .specifications .child div {
+    width: 260px;
+    margin-left: 15px;
+  }
+}
+
+/*  (800px and below) */
+@media (max-width: 800px) {
+  .specifications {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .specifications .child {
+    flex-direction: row;
+  }
+  .specifications .child div {
+    width: 100%;
+    margin-left: 12px;
+  }
+}
+
+/*  (500px and below) */
+@media (max-width: 500px) {
+  .specifications {
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .specifications .child {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .specifications .child div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .specifications img {
+    width: 50px;
+    height: auto;
+  }
+}
