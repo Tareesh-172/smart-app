@@ -167,11 +167,11 @@
   .promocart-input {
     flex-direction: row;
     align-items: stretch;
-    gap: 100px;
-    padding: 10px;
+    gap: 20px;
+    padding: 5px;
   }
   .promocart-input input {
     padding: 10px;
-    font-size: 16px;
+    font-size: 15px;
   }
 }

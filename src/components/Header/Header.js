@@ -9,7 +9,7 @@ import biker from './biker.png';
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className='header'> 
       <div className='header-contents'> 
         <span>50% off on First Delivery</span>
         <h1>Made with Love,<br />Savored with interest.. .</h1>

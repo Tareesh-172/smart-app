@@ -25,7 +25,7 @@ const Footer = () => {
                         <li>Privacy Policy</li>
                     </ul> 
             </div>
-        <div className="footer-content-right">
+        <div className="footer-content-right"> 
             <h2>Git in Touch</h2>
             <Link to='/'>https://github.com/Tareesh-172</Link>
                  <ul>

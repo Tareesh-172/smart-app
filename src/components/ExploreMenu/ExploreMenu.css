@@ -102,6 +102,7 @@
     }
     .explore-menu h2 {
         font-size: 16px;
+        margin-left: 5px;
     }
     .explore-menu-list {
         gap: 10px;

@@ -209,7 +209,7 @@
 /* ≤500px */
 @media (max-width: 500px) {
   .header {
-    height: 50vh;
+    height: 45vh;
     background-position: top center;
   }
   .header-contents {
@@ -219,28 +219,28 @@
     padding: 10px;
   }
   .header-contents span{
-    padding: 20px;
-    font-size: 20px;
-    height: 25px;
-    border-radius: 45px;
+    padding: 10px;
+    font-size: 15px;
+    height: 20px;
+    border-radius: 35px;
 
    }
   .header-contents h1 {
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 3500;
     color: #e6a2cd;
-    margin-top: 35px;
+    margin-top: 25px;
 
   }
   .header-contents p {
-    font-size: 16px;
+    font-size: 13px;
     color: #e0b7d1;
-    font-weight: 480;
-    margin-top: 10px;
+    font-weight: 400;
+    margin-top: 5px;
   }
   .header-contents button {
-    padding: 12px 25px;
-    font-size: 12px;
+    padding: 10px 20px;
+    font-size: 11px;
 
   }
   .mobile-bike-wrap {
@@ -263,9 +263,9 @@
   }
   .food4{
     display: flex;
-    padding-left: 160px;
+    padding-left: 105px;
     position: relative;
-    width: 290px;
+    width: 230px;
     height: auto;
   }
   

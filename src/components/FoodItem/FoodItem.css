@@ -114,6 +114,7 @@
 @media (max-width: 500px) {
     .food-item {
         width: 100%;
+        height: auto;
         border-radius: 10px;
     }
     .food-item-image {
